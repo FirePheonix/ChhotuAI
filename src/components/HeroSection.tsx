@@ -1,11 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { Play } from 'lucide-react';
-import VideoModal from './VideoModal';
 
 const HeroSection: React.FC = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -117,7 +114,7 @@ const HeroSection: React.FC = () => {
                 </button>
                 
                 <button
-                  onClick={() => setIsModalOpen(true)}
+                  onClick={() => window.open('https://drive.google.com/file/d/12AYQyTab_ofnYW6Deer0p7FS2G3VkK2V/view?usp=drive_link', '_blank')}
                   className="px-8 py-3 bg-transparent border border-white/60 text-white font-sans font-medium text-sm lg:text-base tracking-wide hover:border-white hover:bg-white/10 transition-all duration-300 flex items-center gap-2 justify-center"
                 >
                   <Play size={16} />
@@ -128,8 +125,6 @@ const HeroSection: React.FC = () => {
           </div>
         </div>
       </div>
-
-      <VideoModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </section>
   );
 };
