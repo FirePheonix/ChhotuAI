@@ -4,6 +4,7 @@ import PhilosophySection from './components/PhilosophySection';
 import FeaturedCollection from './components/FeaturedCollection';
 import MaterialsSection from './components/MaterialsSection';
 import TestimonialsSection from './components/TestimonialsSection';
+import LiveUsersSection from './components/LiveUsersSection';
 import NewsletterSection from './components/NewsletterSection';
 import Footer from './components/Footer';
 
@@ -15,6 +16,7 @@ function App() {
       <FeaturedCollection />
       <MaterialsSection />
       <TestimonialsSection />
+      <LiveUsersSection />
       <NewsletterSection />
       <Footer />
     </div>
